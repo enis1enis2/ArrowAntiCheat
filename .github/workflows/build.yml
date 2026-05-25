@@ -29,7 +29,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Arrow-AntiCheat
-          path: target/*.jar
+          path: target/Arrow-beta.jar
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
