@@ -1,5 +1,8 @@
 name: Build and Release
 
+permissions:
+  contents: read
+
 on:
   push:
     branches: [main, master]
@@ -9,6 +12,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
